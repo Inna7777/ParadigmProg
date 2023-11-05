@@ -33,12 +33,12 @@ def take_input(player_token):
 
 
 #Функция проверки выигрыша
-def check_win(fild):
+def check_win(field):
     #выигрышные поля
     win_coord = ((0,1,2), (3,4,5), (6,7,8), (0,3,6),(1,4,7), (2,5,8), (0,4,8), (2,4,6))
     for each in win_coord:
-        if fild[each[0]] == fild[each[1]]== fild[each[2]]:
-            return fild[each[0]]
+        if field[each[0]] == field[each[1]]== field[each[2]]:
+            return field[each[0]]
     return False
 
 def main(field):
