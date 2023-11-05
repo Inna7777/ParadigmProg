@@ -41,18 +41,18 @@ def check_win(fild):
             return fild[each[0]]
     return False
 
-def main(fild):
+def main(field):
     counter = 0
     win = False
     while not win:
-        draw_board(fild)
+        draw_board(field)
         if counter % 2 == 0:
             take_input("X")
         else:
             take_input("0")
         counter += 1
         if counter >4:
-            tmp =check_win(fild)
+            tmp =check_win(field)
             if tmp:
                 print(tmp, 'Вы выиграли')
                 win = True
