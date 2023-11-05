@@ -59,5 +59,5 @@ def main(fild):
         if counter == 9:
             print( "Ничья")
             break
-    draw_board(fild)
+    draw_board(field)
 main(field)
